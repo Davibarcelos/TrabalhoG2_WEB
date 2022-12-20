@@ -1,0 +1,238 @@
+
+#logo{
+    width: 80px;
+    height: 25px;
+}
+
+nav{
+    background-color:rgba(48, 21, 116, 0.966);
+    top: 0;
+    margin-bottom: 45px;
+    border-radius: 4px;
+    
+}
+
+nav ul{
+    text-align: right;
+    list-style-type:none ;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #db2a6b!important;
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+nav ul li ul{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: #db2a6b!important;
+}
+
+nav ul li:hover{
+    transition: all 1s;
+    background-color: #ff679f!important;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+nav ul li:hover ul{
+    display: block;
+    padding: 10px;
+    transition: all 2s;
+    left: 0;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #db2a6b!important;
+    color: rgb(255, 255, 255) ;    
+}
+
+nav ul li ul li{
+ text-align: left;
+ left: 0;
+}
+
+nav ul li img.hamburguer {
+    display: block;
+    width: 5%;
+    height: 5%;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    text-shadow: none;
+    color: #ffffff;
+}
+
+nav ul li a:visited{
+    text-decoration: none;
+    text-shadow: none;        
+
+}
+
+.hamburguer {
+    display: none;
+}
+
+.setalado{
+    display: none;
+}
+
+nav ul li img.setalado{
+
+    display: block;
+    position: relative;
+}
+
+
+
+
+/*-----------------Aqui comeca o @media------------*/
+
+@media all and (max-width: 2000px){
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul {
+        font-size: 15pt;
+    }
+
+    nav ul li {
+        padding: 20px;
+    }
+
+    .submenu a{
+        padding: 20px;
+    }
+
+    .submenu a:hover{
+        padding: 20px;
+    }
+
+    main{
+        font-size: 18pt;
+    }
+
+    h2{
+        font-size: xx-large;
+    }
+
+    p{
+        font-size: large;
+    }
+
+    footer{
+        font-size: 18pt;
+        height: 5%;
+    }
+}
+
+@media all and (max-width: 1000px){
+
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul {
+        font-size: 10pt;
+        display: block ;
+    }
+
+    nav ul li {
+        padding: 10px;
+        display: inline-block ;
+    }
+
+    .submenu a{
+        padding: 10px;
+    }
+
+    .submenu a:hover{
+        padding: 10px;
+    }
+    
+    main{
+        font-size: larger;
+    }
+
+    h2{
+        font-size: large;
+    }
+
+    p{
+        font-size: medium;
+    }
+
+    footer{
+        font-size: larger;
+        height: 5%;
+    }
+}
+
+@media all and (max-width: 800px){
+    nav{
+        width: 100%;
+    }
+
+    body{
+        background-image: none;
+        background-color: ivory;
+    }
+
+    nav ul li {
+        width: 100%;
+        display: none;
+        background-color: rgba(48, 21, 116, 0.966);;
+    }
+
+    .submenu a:hover{
+        padding: 10px;
+    }
+
+    nav ul li ul {
+        display: none;
+    }
+
+    nav ul li:hover ul{
+        display: none;
+    }
+    
+    li.hamburguer {
+        display: inline-block;
+        color: rgba(48, 21, 116, 0.966);
+    }
+
+    img{
+        display: none;
+    }
+
+    main{
+        font-size: medium;
+    }
+
+    h2{
+        font-size: small;
+    }
+
+    p{
+        font-size: smaller;
+    }
+
+    footer{
+        font-size: medium;
+        height: 5%;
+    }
+   
+}

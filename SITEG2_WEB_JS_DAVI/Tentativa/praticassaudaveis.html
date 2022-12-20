@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&S: musculação e saúde</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body> 
+    <script>
+    /*  Função que captura todos os LI's do elemento com id='menu' e muda alternando o valor do display de block para vazio (e ai prevalece o valor original: none) */
+    function mostrarEsconderLis() {
+    var collection = document.getElementById("menu").getElementsByTagName("li");
+    for (let i = 0; i < collection.length; i++) {
+    if (collection[i].style.display === "flex") {
+        collection[i].style.display = "";
+    } else {
+        collection[i].style.display="flex";
+    }
+}
+}
+</script>
+<nav>
+<ul id="menu">
+    <li class="hamburguer">
+        <!-- A função em javascript é chamada aqui, quando a imagem do hamburguer é clicada. -->
+        <img class="hamburguer" src="Imagens/hamburguer.png" alt="" onclick="mostrarEsconderLis()">                
+    </li>
+
+    <li><a href="index.html">Home</a> 
+    </li><!---
+    --><li><a href="modalidades.html">Praticas</a>
+        <ul><!--
+        --><li><a href="modalidades.html#" target="_blank" >esportivas</a></li><!--
+        --><li><a href="praticassaudaveis.html#casuais" target="_blank">casuais</a></li>
+        </ul><!--
+        --></li><!-- 
+    --><li><a href="praticassaudaveis.html">Hábitos saudáveis</a>
+    </li><!--
+    --><li><a href="sobre.html">Sobre</a>
+    </li>
+</ul>
+</nav>
+<main>
+
+    <div id="casuais">
+        <h2 class="subtitulo" id="atividade">1.Pratique atividades físicas para hábitos saudáveis</h2>
+        <ul>
+            
+            <li>fortalece os músculos, os ossos e os tendões;</li>
+            <li>fortifica o sistema imunológico;</li>
+            <li>proporciona mais resistência;</li>
+            <li>melhora a circulação sanguínea;</li>
+            <li>reduz os riscos de ocorrência de doenças cardiovasculares;</li>
+            <li>previne infarto;</li>
+            <li>controla o diabetes;</li>
+            <li>diminui a hipertensão;</li>
+            <li>reduz os sintomas de depressão, estresse e ansiedade;</li>
+            <li>melhora a qualidade do sono.</li>
+        </ul>
+
+        <h2 class="subtitulo" id="alongamento">2.Faça alongamentos ao longo do dia</h2>
+        <ul>
+            
+            <li>reduzem as tensões musculares;</li>
+            <li>trazem maior consciência corporal;</li>
+            <li>proporcionam movimentos mais leves;</li>
+            <li>aumentam a amplitude dos movimentos;</li>
+            <li>previnem lesões;</li>
+            <li>aumentam a circulação sanguínea;</li>
+            <li>aquecem e servem para preparar o corpo para uma atividade física.</li>
+        </ul>
+   
+        <h2 class="subtitulo" id="banho">3.Tome banhos gelados</h2>
+        <ul> 
+            <li>Melhora a circulação sanguínea</li>
+            <li>Estimula o sistema imunológico</li>
+            <li>Reduz os sintomas da depressão</li>
+        </ul>
+
+        <h2 class="subtitulo" id="alimentacao">4.Tenha uma alimentação saudável</h2>
+        <ul>
+            <li>Alimentos energéticos</li>
+            <li>Alimentos construtores</li>
+            <li>Alimentos com niveis calóricos equilibrados</li>
+        </ul>
+
+        <h2 class="subtitulo" id="refeicao">5.Não pule refeições</h2>
+        <ul>
+            <li>Se alimentar no minimo três vezes ao dia</li>
+            <li>Gestão equilibrada do que comer</li>
+        </ul>
+
+        <h2 class="subtitulo" id="dieta">6.Evite fazer dietas loucas</h2>
+        <ul>
+            <li>Sempre procurar ajuda de um nutricionista antes de QUALQUER dieta.</li>
+        </ul>
+
+        <h2 class="subtitulo" id="junk-fast">Evite consumir junk food e fast food</h2>
+        <ul>
+            <li>Evite alimentos que causam aumento do colesterol.</li>
+            <li>Evite alimentos com altos niveis de gordura.</li>
+        </ul>
+
+        <h2 class="subtitulo" id="agua">Beba bastante água</h2>
+        <ul>
+            <li>facilita o processo de digestão;</li>
+            <li>reduz o inchaço;</li>
+            <li>ativa a circulação sanguínea;</li>
+            <li>garante o funcionamento dos rins;</li>
+            <li>previne a prisão de ventre;</li>
+            <li>reduz casos de cãibras;</li>
+            <li>regula a temperatura do corpo.</li>
+        </ul>
+
+        <h2 class="subtitulo" id="tabagismo">Evite o tabagismo</h2>
+        <ul>
+            <li>O tabagismo pode a causar doenças cardiovasculares</li>
+            <li>Canceres</li>
+            <li>depressão</li>
+            <li>dependência</li>
+            <li>MORTE..</li>
+        </ul>
+
+        <h2 class="subtitulo" id="saude-mental">Dê prioridade pra a sua saúde mental</h2>
+        <p>Sua saude mental é tão importante quanto o seu corpo. Não se esqueça de cuidar de sua mente. Tudo bem estar cansado, ou triste, ou desanimado. Porém se esses sintomas continuarem não guarde para si <a class="a2" href="https://www.cvv.org.br/">peça ajuda</a>.</p>
+    </div>
+</main>
+    <footer>
+    <a href="principal.html"><img src="imagens/logo.png" alt="logo" width="5%"style="float: left;"></a><span style="font-size: 100%;"> designed by davibarcelos &copy;2022. desenvolivdo por <span>Davi Cunha Barcelos de Oliveira.</span></span>
+    </footer>
+</body>
+</html>

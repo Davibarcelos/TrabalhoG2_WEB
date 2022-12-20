@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M&S: musculação e saúde</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="stylesheet" href="./css/menu.css">
+    </head>
+<body>
+        <script>
+                /*  Função que captura todos os LI's do elemento com id='menu' e muda alternando o valor do display de block para vazio (e ai prevalece o valor original: none) */
+                function mostrarEsconderLis() {
+                var collection = document.getElementById("menu").getElementsByTagName("li");
+                for (let i = 0; i < collection.length; i++) {
+                if (collection[i].style.display === "flex") {
+                    collection[i].style.display = "";
+                } else {
+                    collection[i].style.display="flex";
+                }
+            }
+        }
+        </script>
+    <nav>
+            <ul id="menu">
+                <li class="hamburguer">
+                    <!-- A função em javascript é chamada aqui, quando a imagem do hamburguer é clicada. -->
+                    <img class="hamburguer" src="Imagens/hamburguer.png" alt="" onclick="mostrarEsconderLis()">                
+                </li>
+            
+                <li><a href="index.html">Home</a> 
+                </li><!---
+                --><li><a href="modalidades.html">Praticas</a>
+                    <ul><!--
+                    --><li><a href="modalidades.html#" target="_blank" >esportivas</a></li><!--
+                    --><li><a href="praticassaudaveis.html#casuais" target="_blank">casuais</a></li>
+                    </ul><!--
+                    --></li><!-- 
+                --><li><a href="praticassaudaveis.html">Hábitos saudáveis</a>
+                </li><!--
+                --><li><a href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+    </nav>
+    <main>
+                <div id="bv">
+                        <h1><b> Seja bem vindo! </b></h1>
+                </div>
+                <h2 style="text-align:center ;">Este site vai te ajudar a comecar no mundo dos esportes e de uma vida saudavel.</h2>
+<br>
+        <article class="conteudo">
+            <div class="conteudo"></div>
+            <p>A preocupação em manter a saúde em dia, a vida agitada e o estresse do trabalho têm feito com que cada vez mais pessoas busquem introduzir hábitos saudáveis em sua rotina. De fato, cuidar da mente e do corpo exerce papel de destaque para quem deseja maior qualidade de vida.</p>
+           <p>Está interessado em viver mais e melhor? Então, você deveria rever alguns costumes no seu dia a dia. Que tal reorganizar o seu mindset e tentar ser mais otimista e positivo? Parar de fumar? Deixar de comer comidas pouco nutritivas e fast foods todos os dias? Ou então, começar a praticar um novo esporte? Afinal, é possível mudar algumas pequenas práticas e ter ótimos resultados na sua saúde.</p>
+            <p>Aqui você vai encontrar algumas dicas de como ter hábitos mais saudáveis e como essa prática vai melhorar a sua qualidade de vida. Acompanhe a leitura!</p> 
+        </article>
+
+        <article class="conteudo">
+            <div class="conteudo">
+                <h2 style="text-align:center ;">A importância de cuidar da saúde ao longo da vida</h2>
+               <p> Ter uma boa saúde não é apenas ostentar um corpo são e livre de doenças. Esse conceito vai muito além. Na verdade, esse estado saudável abrange todo o completo bem-estar físico, mental, psicológico e social de uma pessoa. Essa condição pode ser melhorada com a introdução de novas práticas mais benéficas e a retirada de hábitos considerados negativos, e que nada agregam.</p>
+                
+               <p> Cuidar da saúde vai fazer com que o indivíduo tenha uma vida mais feliz e satisfatória. Além disso, não haverá a necessidade de desembolsar altos valores com medicamentos, possibilita uma alta produtividade e garante muitos mais anos de vida. É nesse cenário que surge a medicina preventiva, como uma área cujo objetivo é evitar o surgimento de doenças.</p>                
+               </div>
+        </article>
+
+        <article class="contudo">
+            <div class="conteudo">
+                           <h2 style="text-align:center;"> Fases e cuidados para hábitos saudáveis</h2>
+            <p>Os cuidados devem ser mantidos em todas as fases da vida, desde a infância até a velhice. Assim que nasce, o bebê exige atenção total dos seus pais — a alimentação deve ser selecionada, é necessário tomar vacinas e estar atento ao desenvolvimento do pequeno.</p>
+
+           <p>Na infância e adolescência, o jovem está passando por uma reorganização da sua mentalidade. As doenças psicológicas são muito comuns nessa fase. Além disso, a prática de esportes ganha maior importância.</p> 
+
+           <p>A fase adulta é marcada pelo trabalho intenso e pela falta de tempo para se dedicar ao lazer e a atividades prazerosas. A saúde, muitas vezes, é deixada de lado. Esse estilo de vida pode prejudicar o indivíduo, tanto do ponto de vista físico quanto emocional. Esse cenário é um forte indicador do surgimento de uma doença, mais cedo ou mais tarde.</p> 
+
+           <p>A velhice é uma fase que requer cuidados redobrados, uma vez que a saúde costuma se encontrar debilitada e o corpo está mais frágil — os ossos podem estar fracos, o que favorece quedas. Os exercícios físicos são muito recomendados, mas devem ser praticados com moderação, sempre respeitando os limites do idoso.</p>
+
+           <p>De fato, se manter ativo durante esse período vai fazer toda a diferença para ter uma boa qualidade de vida. Manter-se em atividade na velhice é uma dica preciosa para a manutenção do bem-estar físico e emocional. Isso ajuda no relacionamento com familiares e amigos. Os cuidados com o idoso o preservam de doenças psicológicas, quedas e internações desnecessárias.</p> 
+            </div>
+        </article>
+
+        <article class="conteudo">
+            <div class="conteudo">
+            <ol> 
+               <li>1.<a href="praticassaudaveis.html#atividade">Pratique atividades físicas para hábitos saudáveis</a></li></p> 
+               <li>2.<a href="praticassaudaveis.html#alongamento">Faça alongamentos ao longo do dia</a></li></p>
+               <li>3.<a href="praticassaudaveis.html#banho">Tome banhos gelados</a></li></p>
+               <li>4.<a href="praticassaudaveis.html#alimentacao">Tenha uma alimentação saudável</a></li></p> 
+               <li>5.<a href="praticassaudaveis.html#refeicao">Não pule refeições</a></li></p> 
+               <li>6.<a href="praticassaudaveis.html#dieta">Evite fazer dietas loucas</a></li></p> 
+               <li>7.<a href="praticassaudaveis.html#junk-fast">Evite consumir junk food e fast food</a></li></p>
+               <li>8.<a href="praticassaudaveis.html#agua">Beba bastante água</a></li></p>
+               <li>9.<a href="praticassaudaveis.html#tabagismo">Evite o tabagismo</a></li></p> 
+               <li>10.<a href="praticassaudaveis.html#saude-mental">Dê prioridade pra a sua saúde mental</a></li></p>
+            </ol>
+            </div>
+        </article>
+
+        <article class="conteudo">
+            <div class="conteudo">
+                <h1>Modalidades</h1>
+                <p>Confira algumas modalidades de praticas benéficas à saúde:<a class="a2" href="modalidades.html"> Clique Aqui</a></p>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+    <a href="principal.html"><img src="imagens/logo.png" alt="logo" width="5%"style="float: left;"></a><span style="font-size: 100%;"> designed by davibarcelos &copy;2022. desenvolivdo por <span>Davi Cunha Barcelos de Oliveira.</span></span>
+    </footer>
+</body>
+</html>

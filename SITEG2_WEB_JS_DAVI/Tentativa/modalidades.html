@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&S: musculção e saúde</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <script>
+        /*  Função que captura todos os LI's do elemento com id='menu' e muda alternando o valor do display de block para vazio (e ai prevalece o valor original: none) */
+        function mostrarEsconderLis() {
+        var collection = document.getElementById("menu").getElementsByTagName("li");
+        for (let i = 0; i < collection.length; i++) {
+        if (collection[i].style.display === "flex") {
+            collection[i].style.display = "";
+        } else {
+            collection[i].style.display="flex";
+        }
+    }
+}
+</script>
+<nav>
+    <ul id="menu">
+        <li class="hamburguer">
+            <!-- A função em javascript é chamada aqui, quando a imagem do hamburguer é clicada. -->
+            <img class="hamburguer" src="Imagens/hamburguer.png" alt="" onclick="mostrarEsconderLis()">                
+        </li>
+    
+        <li><a href="index.html">Home</a> 
+        </li><!---
+        --><li><a href="modalidades.html">Praticas</a>
+            <ul><!--
+            --><li><a href="modalidades.html#" target="_blank" >esportivas</a></li><!--
+            --><li><a href="praticassaudaveis.html#casuais" target="_blank">casuais</a></li>
+            </ul><!--
+            --></li><!-- 
+        --><li><a href="praticassaudaveis.html">Hábitos saudáveis</a>
+        </li><!--
+        --><li><a href="sobre.html">Sobre</a>
+        </li>
+    </ul>
+</nav>
+    <main>
+        <h1 id="esportivas">Algumas das modalidades de esportes que são benéficos à saúde são:</h1>
+
+        <div class="conteudo">
+            <h2 class="subtitulo">Lutas:</h2>
+            <p>
+                Existem diversas modalidades de lutas dentre as mais variadas, com variações de estilos mais explosivos
+                e violentos, à estilos mais técnicos e estratégicos.
+                Por exemplo:
+            </p>
+            <center>
+            <figure>
+                <figcaption>Muay-Thai</figcaption>
+                <p><a class="a2" href="https://www.esportelandia.com.br/artes-marciais/tudo-sobre-muay-thai/" target="_blank"> <img src="./Imagens/muay-thai.jpg" alt="" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption>Taekwondo</figcaption>    
+                <p><a class="a2" href="https://www.esportelandia.com.br/artes-marciais/tudo-sobre-taekwondo/" target="_blank"><img src="./Imagens/taekwondo.jpg" alt="" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption>M.M.A</figcaption>
+                <p><a class="a2" href="https://www.esportelandia.com.br/artes-marciais/tudo-sobre-mma/" target="_blank"><img src="./Imagens/mma.jpg" alt="" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            
+            <h2 class="subtitulo">Esportes aquaticos:</h2>
+            <p>
+                Como as lutas existem também inúmeros esportes aquaticos, dos mais diversos tipos, indo de praticas de
+                lazer, à modalidades olímpicas que demandam de muita força, preparo físico, técnica e além de tudo
+                espirito competitivo.
+                Por exemplo:
+            </p>
+            <center>
+            <figure>
+                <figcaption>Natação</figcaption>
+                <p><a class="a2" href="https://www.esportelandia.com.br/natacao/tudo-sobre-natacao/" target="_blank"><img src="./Imagens/natacao.jpg" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption>Natação-Olímpica</figcaption>
+            <p><a class="a2" href="https://www.esportelandia.com.br/natacao/natacao-nas-olimpiadas/" target="_blank"><img src="./Imagens/natacao2.jpg" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption>Hidroginastica</figcaption>
+            <p><a class="a2" href="http://www.clubehelvetia.com.br/natacao-hidro.php" target="_blank" width="80%" height="10%"><img src="./Imagens/hidroginastica.jpg" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption>Canoagem</figcaption>
+            <p><a class="a2" href="https://www.esportelandia.com.br/canoagem/tudo-sobre-canoagem/" target="_blank"><img src="" alt=""><img src="./Imagens/canoagem.webp" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption>Mergulho</figcaption>
+            <p><a class="a2" href="https://www.arteacademiadive.com/post/2016/03/25/como-se-tornar-um-mergulhador" target="_blank"><img src="./Imagens/mergulho.jpg" alt="" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            
+            <h2 class="subtitulo">Esportes de alta intensidade:</h2>
+            <p>
+                Essas categorias de esportes são para as pessoas que gostam de aventura e adrenalina, ou são muito competitivos. Uma categoria que ajuda a deixar o corpo em forma e a aumentar a performance ao praticar exercícios.
+            </p>
+            <center>
+            <figure>
+                <figcaption>Maratonas</figcaption>
+            <p><a class="a2" href="https://www.maratonasnomundo.com.br/" target="_blank"><img src="./Imagens/maratona.jpg" alt="" width="80%" height="10%" ></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption>Atletismo/corrida</figcaption>
+            <p><a class="a2" href="https://www.esportelandia.com.br/atletismo/" target="_blank"><img src="./Imagens/corrida.jpg" alt="" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+            <center>
+            <figure>
+                <figcaption id="Casuais">Caminhada</figcaption>
+            <p><a class="a2" href="https://www.tuasaude.com/caminhada/#:~:text=A%20caminhada%20%C3%A9%20uma%20atividade,ansiedade%2C%20fortalecimento%20muscular%2C%20melhora%20da" target="_blank"><img src="./Imagens/caminhada.jpg" alt="" width="80%" height="10%"></a></p>
+            </figure>
+            </center>
+        </div>
+    </main>
+    <footer>
+        <a href="principal.html"><img src="imagens/logo.png" alt="logo" width="10%" style="float: left;"></a> designed
+        by davibarcelos &copy;2022. desenvolivdo por <span>Davi Cunha Barcelos de Oliveira.</span>
+    </footer>
+</body>
+
+</html>

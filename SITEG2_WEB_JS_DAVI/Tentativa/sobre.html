@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&S: musculação e saúde</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <script>
+        /*  Função que captura todos os LI's do elemento com id='menu' e muda alternando o valor do display de block para vazio (e ai prevalece o valor original: none) */
+        function mostrarEsconderLis() {
+        var collection = document.getElementById("menu").getElementsByTagName("li");
+        for (let i = 0; i < collection.length; i++) {
+        if (collection[i].style.display === "flex") {
+            collection[i].style.display = "";
+        } else {
+            collection[i].style.display="flex";
+        }
+    }
+}
+</script>
+<nav>
+    <ul id="menu">
+        <li class="hamburguer">
+            <!-- A função em javascript é chamada aqui, quando a imagem do hamburguer é clicada. -->
+            <img class="hamburguer" src="Imagens/hamburguer.png" alt="" onclick="mostrarEsconderLis()">                
+        </li>
+    
+        <li><a href="index.html">Home</a> 
+        </li><!---
+        --><li><a href="modalidades.html">Praticas</a>
+            <ul><!--
+            --><li><a href="modalidades.html#esportivas">esportivas</a></li><!--
+            --><li><a href="praticassaudaveis.html#casuais">casuais</a></li>
+            </ul><!--
+            --></li><!-- 
+        --><li><a href="praticassaudaveis.html">Hábitos saudáveis</a>
+        </li><!--
+        --><li><a href="sobre.html">Sobre</a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <div class="conteudo">
+        <p>Meu nome é Davi Cunha Barcelos de Oliveira, conhecido como <b>"melhor goleiro da face da terra"</b> ou <b>"monitor de Redes"</b>, tenho 17 anos e sou estudante do Instituto Federal campus Arrial do Cabo.</p>
+        <p>Gosto de jogar bola(até porque eu não jogo, eu dou aula), toco teclado, e gosto da área de informatica em geral.</p>
+
+        <p>Este site foi desenvolvido para um trabalho avaliativo da materia de dev. Web., porém a intenção é aprender e melhorar para conseguir trabalhar comerciando sites.</p>
+       <p>Deu muito trabalho então favor considerar o esforço. :D</p>
+        
+    </div>
+</main>
+    <footer style="bottom: 0; position:absolute;">
+        <a href="principal.html"><img src="imagens/logo.png" alt="logo" width="5%"style="float: left;"></a><span style="font-size: 100%;"> designed by davibarcelos &copy;2022. desenvolivdo por <span>Davi Cunha Barcelos de Oliveira.</span></span>
+    </footer>
+</body>

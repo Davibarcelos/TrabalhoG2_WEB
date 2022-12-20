@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    background-color: ivory;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3e3d3d;
+    font-weight: 700;
+    background-image: url(../Imagens/fundo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*-----------------aqui começa o css do main------------*/
+
+main{
+    margin: 0 10% 0 10%;
+}
+
+main div{
+    margin: 5px;
+}
+
+
+main div h1{
+    color: #000000!important;;
+    padding: 20px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudo{
+    border-radius: 3px;
+    text-align: justify;
+}
+
+h1,h2{
+    text-decoration:solid;
+    margin: 10px 0px 10px 0px;
+    font-weight: bolder;
+}
+
+figure{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+figcaption{
+text-align:center;
+font-size:large;
+margin-bottom: 10px;
+}
+
+p{
+    text-align: center;
+    text-align: justify;
+}
+
+#bv{
+
+border: 3px solid black ;
+
+}
+
+.a2{
+    color: #013971;
+    text-align: center;
+    align-items: center;
+}
+
+
+.a2:hover{
+    color: #0877e7;
+    transition: all 1s;
+    }
+
+a{
+    text-decoration: none;
+    text-shadow: none;
+
+}
+
+a:hover{
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 1s;
+}
+
+ol li a{
+    text-decoration: none;
+    text-shadow: none;
+    color: #013971;
+}
+
+ol li a:hover{
+    text-decoration: none;
+    text-shadow: none;
+    color: #0877e7;
+    transition: all 1s;
+}
+
+.subtitulo{
+text-align: left;
+margin-bottom: 10px;
+}
+
+/*-----------------aqui começa o css do footer------------*/
+
+footer{
+
+    margin-top: 10px;
+    padding: 30px 0px ;
+    width: 100%;
+    bottom: 0px;
+    background-color:rgba(15, 15, 15, 0.966);
+    text-align: center;
+    color: #db2a6b!important;;
+
+
+}
